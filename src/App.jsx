@@ -11,7 +11,7 @@ function App() {
   return (
     <>
   <div className='flex'>
-    <div>
+    <div >
 
       <Navbar />
     </div>
