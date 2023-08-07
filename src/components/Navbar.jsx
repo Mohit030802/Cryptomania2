@@ -62,14 +62,7 @@ const Navbar = () => {
                 <h1 className={`${!open && "hidden"}`}>News</h1>
               </li>
             </Link>
-            <Link to={"/Exchange"}>
-              <li
-                className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-100 text-xl font-medium items-center gap-3 hover:bg-purple-700 hover:duration-300`}
-              >
-                <CurrencyExchangeIcon />
-                <h1 className={`${!open && "hidden"}`}>Exchange</h1>
-              </li>
-            </Link>
+            
           </ul>
         </div>
       

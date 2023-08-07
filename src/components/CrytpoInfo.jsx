@@ -47,7 +47,7 @@ const CrytpoInfo = () => {
                     </Select>
                 </div>
                <LineChart coinHistory={coinHistory} currentPrice={millify(cryptoDetails?.price)} coinName={cryptoDetails?.name}/>
-                <div className='flex flex-wrap justify-center items-center text-white'>
+                <div className='flex flex-wrap justify-center items-center text-white py-6'>
                     <div className='flex'>
                         <div className='bg-purple-600 hover:bg-purple-700 duration-200 rounded-xl shadow-lg shadow-purple-950 w-fit m-2 p-4 '>
                             <h2 className='text-3xl font-semibold font-serif underline underline-offset-4'>{data?.data?.coin.name} Value Statistics</h2>
