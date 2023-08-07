@@ -13,11 +13,11 @@ const News = ({ simplified }) => {
     <>
     
     
-      <div className="container my-12 mx-auto px-4 md:px-12">
+      <div className="container my-12 mx-auto px-4 md:px-12 ">
         <div className="flex flex-wrap -mx-1 lg:-mx-4">
           {
             cryptoNews.value.map((news, i) => (
-              <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+              <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 hover:scale-110 transition ease-linear duration-200">
                   
                   <article className="overflow-hidden rounded-lg shadow-lg">
                   <a href={news.url} target="_blank" rel="noreferrer">

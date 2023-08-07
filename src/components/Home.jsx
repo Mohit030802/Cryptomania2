@@ -13,8 +13,8 @@ const Home = () => {
     // console.log(data)
     return (
         <>
-            <div className='flex flex-col p-5'>
-                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2'>Global Crypto Stats</h1>
+            <div className='flex flex-col p-5 bg-gray-200 rounded-2xl m-3'>
+                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2 underline underline-offset-2'> Global Crypto Stats</h1>
                 <div className='grid grid-cols-6 mt-4  gap-4 p-4'>
                     <div className="col-start-1 col-end-3 ...">
                         <div className='flex flex-col mb-2 font-serif mt-2'>
@@ -59,14 +59,14 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='flex space-x-72  '>
-                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2' >Top 10 Cryptocurrency in the world</h1>
-                <Link to={'/Crypto'}><p className='flex text-xl font-semibold text-purple-500'>Show more</p></Link>
+            <div className='flex justify-between '>
+                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2 underline underline-offset-2' >Top 10 Cryptocurrency in the world</h1>
+                <Link to={'/Crypto'}><p className='flex text-xl font-semibold text-purple-500 mr-2'>Show more</p></Link>
             </div>
                 <Crypto simplified/>
-            <div className='flex gap-96 '>
-                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2'>Latest CRYPTO News</h1>
-                <Link to={'/News'}><p className='flex text-xl font-semibold text-purple-500 ml-44'>Show more</p></Link>
+            <div className='flex justify-between '>
+                <h1 className='text-4xl font-bold font-serif text-purple-950 ml-2 underline underline-offset-2'>Latest CRYPTO News</h1>
+                <Link to={'/News'}><p className='flex text-xl font-semibold text-purple-500 mr-2 '>Show more</p></Link>
             </div>
                 <News simplified/>
 

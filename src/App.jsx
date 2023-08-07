@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Crypto from './components/Crypto'
 import News from './components/News'
 import Exchange from './components/Exchange'
+import CrytpoInfo from './components/CrytpoInfo'
 function App() {
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Navbar" element={<Navbar />}></Route>
         
         <Route path="/Crypto" element={<Crypto />}></Route>
+        <Route path="/Cryptoinfo/:coinId" element={<CrytpoInfo />}></Route>
         <Route path="/News" element={<News />}></Route>
         <Route path="/Exchange" element={<Exchange />}></Route>
       </Routes>

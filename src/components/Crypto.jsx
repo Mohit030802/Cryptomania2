@@ -24,14 +24,9 @@ const Crypto = ({ simplified }) => {
         <div className="flex flex-wrap -mx-1 lg:-mx-4">
           {
             cryptos?.map((currency) => (
-
-
-              <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 " key={currency.id}>
-                <Link to={`/crypto/${currency.id}`}>
+              <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 " key={currency.uuid}>
+                <Link to={`/Cryptoinfo/${currency.uuid}`}>
                   <article className="overflow-hidden rounded-lg shadow-lg  shadow-purple-200 hover:scale-110 transition ease-linear duration-150">
-
-
-
                     <header className="flex items-center justify-between leading-none p-2 md:p-4">
                       <a className="flex items-center no-underline hover:underline text-black" href="#">
                         <img alt="Placeholder" className="block  w-10 h-10" src={currency.iconUrl} />
@@ -39,7 +34,6 @@ const Crypto = ({ simplified }) => {
                           {currency.name}
                         </p>
                       </a>
-
                     </header>
                     <div className='flex flex-col m-2 p-2 '>
                       <p className='text-lg mb-3'><span className='font-semibold font-serif text-xl text-purple-800'>Price: </span>{millify(currency.price)}</p>
@@ -50,10 +44,6 @@ const Crypto = ({ simplified }) => {
                   </article>
                 </Link>
               </div>
-
-
-
-
             ))
           }
         </div>
