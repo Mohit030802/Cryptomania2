@@ -7,11 +7,12 @@ const Crypto = ({ simplified }) => {
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
   const [cryptos, setCryptos] = useState(cryptosList?.data?.coins)
   const [searchTerm, setSearchTerm] = useState('')
-  if (isFetching) return 'Loading...'
+  
   useEffect(() => {
     const filteredData = cryptosList?.data?.coins.filter((coin) => coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
     setCryptos(filteredData)
   }, [cryptosList, searchTerm])
+  if (isFetching) return 'Loading...'
   return (
     <>
       {!simplified && (
