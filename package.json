@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -18,6 +19,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "antd": "^5.8.2",
     "axios": "^1.4.0",
+    "chart.js": "^4.3.3",
     "chartjs": "^0.3.24",
     "html-react-parser": "^4.2.0",
     "millify": "^6.1.0",
